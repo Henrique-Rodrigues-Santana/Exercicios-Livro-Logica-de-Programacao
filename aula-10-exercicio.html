@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vitorias = Number(prompt('Qantas vitorias o nosso time teve ?'))
+        var empates = Number(prompt('Quantos empates o nosso time teve ?'))
+        var derrotas = Number(prompt('Quantas derrotas seu time teve ? '))
+        var vitoriaRival = Number(prompt('Quantas vitórias o adversário teve ?'))
+        var empateRival = Number(prompt('Quantos empates o adversário teve ?'))
+        var derrotasRival = Number(prompt('Quantas derrotas o adversário teve ?'))
+
+        function calc(vitorias,empates,derrotas){
+            var pontos = (vitorias * 3) + empates
+            pontos -= derrotas
+            return pontos
+        }
+
+        var pontos = calc(vitorias,empates,derrotas)
+        var pontosAdv = calc(vitoriaRival,empateRival,derrotasRival) 
+
+        console.log('Pontos do meu time '+ pontos)
+        console.log('Pontos do adversário '+ pontosAdv)
+        
+
+        if(pontos > pontosAdv){
+            document.write('Estamos indo bem')
+            
+        }
+
+        if(pontos < pontosAdv){
+            document.write('Estamos indo mal')
+        }
+
+        if(pontos == pontosAdv){
+            document.write('Estamos empatados')
+        }
+    </script>
+</body>
+</html>

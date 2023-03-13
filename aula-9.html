@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var primeira = function(){
+            console.log('1 - antes')
+            segundo()
+            console.log('1 - depois')
+        }
+
+        var segundo = function(){
+            console.log('2 - antes')
+            terceiro()
+            console.log('2 - depois')
+        }
+
+        var terceiro = function(){
+            console.log('3 - antes')
+            primeira()
+            console.log('3 - depois')
+        }
+
+        primeira()
+    </script>
+</body>
+</html>

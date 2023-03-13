@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function sorteio (numero){
+            
+            
+            var numero = Number(numero,resposta)
+            var numeroRandom = (Math.random()*numero).toFixed(0) 
+            document.write('A resposta certa é: '+numeroRandom+'<br>')
+            document.write('Você escolheu o '+ resposta + '<br>')
+
+            if(resposta == numeroRandom){
+            document.write('Acertou brother')
+              }else{
+                if(resposta > numeroRandom){
+                document.write('Chutou muito alto')
+                    }else{
+                document.write('Chutou muito baixo')
+            }
+        }
+
+        }
+        
+        var intervalo = Number(prompt('Qual é o intervalo do sorteio ?')) 
+        var resposta = Number(prompt('Digite um número entre 0 e '+ intervalo))
+
+
+        if(isNaN(intervalo)){
+            document.write('O intervalo tem que ser numérico')
+        }else if(isNaN(resposta)){
+            document.write('O número de sorteio tem que ser um número')
+        }else{
+            sorteio(intervalo,resposta)
+        }
+
+        
+        
+
+        
+    </script>
+</body>
+</html>

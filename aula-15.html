@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeroPC = (Math.random()*10).toFixed()
+        console.log(numeroPC)
+        var chances = 3
+        
+        var numeroDig = Number(prompt('Digite um número'))
+        
+        while(chances > 0){
+
+            verificar(numeroDig,numeroPC)
+
+            if(numeroDig != numeroPC){
+                chances -= 1
+                numeroDig =  Number(prompt('Digite outro numero, você tem '+chances+' chances'))
+                console.log('inicio da condicional maior menor')
+                
+
+            }else{
+
+                alert('Parabéns, você acertou')
+                chances = 0
+            }
+        }
+
+        function verificar(numeroDig,numeroPC){
+            if(numeroDig > numeroPC){
+                    alert('Quase, escolha um numero menor ')
+                }else if(numeroDig < numeroPC){
+                    alert('Quase, escolha um numero maior ')
+                }
+        }
+
+        
+    </script>
+</body>
+</html>

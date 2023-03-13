@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var loteria = []
+        var numerosEscolhidos = []
+
+            for(var i = 0;i < 6;i++){
+
+            var numero = (Math.random()*60).toFixed()
+
+            loteria.push(numero) 
+
+            }
+
+            for(var a = 0;a < 6;a++){
+            
+            var numero = Number(prompt('Numero da loteria: '+ a))
+            
+            numerosEscolhidos.push(numero)
+
+            }
+
+            console.log(numerosEscolhidos)
+            console.log(loteria)
+        
+    </script>
+</body>
+</html>

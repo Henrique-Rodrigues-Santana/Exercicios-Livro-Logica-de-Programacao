@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function escreva ( frase ){
+            document.write(frase + '<br>')
+        }
+
+        var anoDaCopa = Number(prompt('Qual ano inicial que você quer calcular a copa?'))
+        var anoLimite = Number(prompt('Qual ano limite que você quer calcular a copa?'))
+        
+        while(anoDaCopa <= anoLimite){
+            escreva('A copa será festejada no ano de '+ anoDaCopa)
+            anoDaCopa += 4
+            
+        }
+    </script>
+</body>
+</html>

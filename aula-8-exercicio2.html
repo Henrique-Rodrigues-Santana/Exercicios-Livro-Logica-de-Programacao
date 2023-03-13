@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual é o seu nome ?')
+        var idade = prompt(nome + ', Qual é a sua idade ?')
+        var dias = dias(idade)
+        var batimentos = bati(dias)
+        
+        function dias(idade){
+            var diasDeVida = idade * 365
+            return diasDeVida
+        }
+
+        function bati(dias){
+            var batimentos = dias * 24 * 60 * 80
+            return batimentos
+        }
+
+        function escrever(nome,dias,batimentos){
+
+            document.write('Olá ' + nome + ', você viveu até o momento: ' + dias + ', e seu coração bateu: ' + batimentos + ' vezes')
+
+        }
+
+        escrever(nome, dias, batimentos)
+
+        console.log(dias)
+        console.log(batimentos)
+
+
+
+        
+        
+
+        
+    </script>
+</body>
+</html>
+
+
+

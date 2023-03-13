@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valorGasolina = 2.90
+        var valorAlcool = 2.40
+        var tanque = 40
+
+        var distanciaGasolina = 480
+        var distanciaAlcool = 300
+
+        var porLitroGasolina = distanciaGasolina / tanque
+        
+        var porLitroAlcool = distanciaAlcool / tanque
+
+        var gasolinaPorKm = valorGasolina/porLitroGasolina
+        console.log(gasolinaPorKm.toFixed(2))
+
+        var alcoolPorKm = valorAlcool/porLitroAlcool
+        console.log(alcoolPorKm.toFixed(2))
+
+
+        
+    </script>
+</body>
+</html>
